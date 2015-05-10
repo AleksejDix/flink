@@ -18,5 +18,8 @@
   "homepage": "https://github.com/AleksejDix/flink",
   "devDependencies": {
     "grunt": "^0.4.5"
+  },
+  "dependencies": {
+    "grunt": "^0.4.5"
   }
 }
