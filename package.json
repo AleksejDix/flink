@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/AleksejDix/flink/issues"
   },
-  "homepage": "https://github.com/AleksejDix/flink"
+  "homepage": "https://github.com/AleksejDix/flink",
+  "devDependencies": {
+    "grunt": "^0.4.5"
+  }
 }
