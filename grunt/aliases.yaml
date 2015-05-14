@@ -1,2 +1,2 @@
 default:
-  - 'concurrent:work'
+  - 'concurrent:server'

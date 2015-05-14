@@ -6,7 +6,7 @@ module.exports = {
 			]
 	},
 	dist: {
-		src: 'build/css/flink.css',
-		dest: 'build/css/flink.css'
+		src: '<%= flink.output %>/<%= flink.css %>/<%= package.name %>.css',
+		dest: '<%= flink.output %>/<%= flink.css %>/<%= package.name %>.css'
 	}
 };

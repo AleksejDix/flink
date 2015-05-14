@@ -1,26 +1,23 @@
 module.exports = {
-	options: {
-		livereload: true,
-	},
 	images: {
-		files: [ 'lib/img/*.{png,jpg,gif}' ],
-		tasks: [ 'newer:imagemin' ]
+		files: [ '<%= flink.input %>/<%= flink.img %>/*.{png,jpg,gif}' ],
+		tasks: [ 'imagemin' ]
 	}, /* watch images in lib/img/ */
 	deleting : {
-		files: [ 'lib/img/*.{png,jpg,gif}' ],
+		files: [ '<%= flink.input %>/<%= flink.img %>/*.{png,jpg,gif}' ],
 		tasks: [ 'delete_sync' ]
 	}, /* delete images */
 	stylus: {
-		files: [ 'lib/stylus/*.styl' ],
-		tasks: [ 'stylus', 'postcss', 'autoprefixer' ]
+		files: [ '<%= flink.input %>/<%= flink.stylus %>/**/*.styl' ],
+		tasks: [ 'newer:stylus', 'postcss', 'autoprefixer', 'newer:todo' ]
 	}, /* watch stylus lost-grid rupture autoprefixer :P whole css woodoo*/
 	jade: {
-		files: ['lib/jade/*.jade' ],
+		files: ['<%= flink.input %>/<%= flink.jade %>/*.jade' ],
 		tasks: ['jade']
 	}, /* watch jade templates except template folder */
 	scripts: {
-		files: ['lib/**/*.js'],
-		tasks: ['concat', 'uglify'],
+		files: ['<%= flink.input %>/**/*.js'],
+		tasks: ['newer:concat', 'newer:uglify'],
 		options : {
 			spawn : false
 		}

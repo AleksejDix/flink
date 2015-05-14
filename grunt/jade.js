@@ -5,9 +5,9 @@ module.exports = {
 		},
 		files: [{
 			expand: true,
-			cwd: "lib/jade",
-			src: "*.jade",
-			dest: "build",
+			cwd: "<%= flink.input %>/<%= flink.jade %>",
+			src: "*.<%= flink.jade %>",
+			dest: "<%= flink.output %>",
 			ext: ".html"
 		}]
 	}

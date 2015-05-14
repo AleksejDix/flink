@@ -1,0 +1,29 @@
+/*!------------------------------------*\
+    $MIXINS
+\*------------------------------------*/
+
+error(state)
+	if state == warning
+		outline 5px solid #FFBF00
+	else if state == stop
+		outline 5px solid #FF0303
+	else if state == go 
+		outline 5px solid #008E09
+	else if state == info
+		outline 5px solid #0DB2B6
+		
+/*!
+You can use this for components
+FIXME extend this function with @extend in +block-mixin()
+
+.foo
+	+headings(1,5)
+		background yellow
+*/
+
+headings($from = 1, $to = 6)
+	if $from >= 1 and $to <= 6
+		for $i in ($from)..($to)
+			h{$i}
+				{block}
+

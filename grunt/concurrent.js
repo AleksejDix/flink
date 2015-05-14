@@ -2,5 +2,5 @@ module.exports = {
   options: {
     logConcurrentOutput: true
   },
-	work: ['connect','watch']
+	server: ['browserSync','watch','todo']
 };

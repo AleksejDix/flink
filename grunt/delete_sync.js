@@ -1,7 +1,7 @@
 module.exports = {
 	dist: {
-    cwd: 'build/img/',
+    cwd: '<%= flink.output %>/<%= flink.img %>/',
     src: ['**'],
-    syncWith: 'lib/img/'
+    syncWith: '<%= flink.input %>/<%= flink.img %>/'
   }
 }

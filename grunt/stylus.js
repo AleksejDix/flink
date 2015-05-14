@@ -10,7 +10,7 @@ module.exports = {
 			]
 		},
 		files: {
-			'build/css/flink.css': 'lib/stylus/flink.styl'
+			'<%= flink.output %>/<%= flink.css %>/<%= package.name %>.css': '<%= flink.input %>/<%= flink.stylus %>/<%= package.name %>.styl'
 		}
 	}
 };

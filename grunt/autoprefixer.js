@@ -1,10 +1,10 @@
 module.exports = {
 	options : {
-		browsers : ['> 5%', 'last 2 version', 'ie 8', 'ie 9']
+		browsers : ['> 5%', 'last 10 version', 'ie 8', 'ie 9']
 	},
 	dist : {
 		files : {
-			'build/css/flink.css' : 'build/css/flink.css'
+			'<%= flink.output %>/<%= flink.css %>/<%= package.name %>.css' : '<%= flink.output %>/<%= flink.css %>/<%= package.name %>.css'
 		}
 	}
 };

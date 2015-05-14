@@ -1,6 +1,6 @@
 module.exports = {
 	dist : {
-		src : 'build/js/flink.js',
-		dest : 'build/js/flink.min.js'
+		src : '<%= flink.output %>/<%= flink.js %>/<%= package.name %>.js',
+		dest : '<%= flink.output %>/<%= flink.js %>/<%= package.name %>.min.js'
 	}
 };

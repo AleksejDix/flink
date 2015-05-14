@@ -2,9 +2,9 @@ module.exports = {
   dynamic : {
     files: [{
       expand: true,
-      cwd: 'lib/img/',
+      cwd: '<%= flink.input %>/<%= flink.img %>/',
       src: ['**/*.{png,jpg,gif}'],
-      dest: 'build/img/'
+      dest: '<%= flink.output %>/<%= flink.img %>/'
     }]
   }
 };

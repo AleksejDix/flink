@@ -1,0 +1,44 @@
+if debug-mode
+
+	img
+		error(stop)
+	img[alt]
+		outline none
+	img[alt=""]
+		error(warning)
+
+
+
+
+
+	a
+		error(warning)
+	a[title]
+		outline:none
+	a[href="#"],
+	a[href="*javascript"]
+		error(warning)
+	a[target]
+		error(info)
+		&:after
+			content ' - avoid target in your anchors'
+
+
+
+
+
+	ul
+	ol
+		> *:not(li)
+			error(stop)
+
+
+
+
+
+	[id]
+		error(stop)
+		&:after
+			content " - don't use ID's please!"
+			background red
+			color white
