@@ -1,6 +1,6 @@
 module.exports = {
 	todo:{
-		files: [ '<%= flink.input %>/**/*.*' ],
+		files: [ '<%= flink.input %>/**/**/*.*' ],
 		tasks: [ 'todo' ]
 	},
 	images: {

@@ -27,3 +27,40 @@ headings($from = 1, $to = 6)
 			h{$i}
 				{block}
 
+
+
+
+
+
+/*
+	.foo
+		set-font-size(14px)
+		height remify(100px)
+*/
+set-font-size(value)
+	font-size value
+	if value is inherit
+		/* do nothing*/
+	else
+		font-size remify(value)
+
+remify(value)
+	u = unit(value)
+	if u is 'px'
+		return unit(value/base-font-size,'rem')
+	else 
+		return unit(value, u)
+	
+
+font-size(font-size, line-height = true)
+	font-size font-size
+	font-size unit(font-size / base-font-size, 'rem')
+	if line-height == true 
+		line-height unit(ceil(font-size / base-line-height) * (base-line-height / font-size), '')
+		
+
+/* FIXME fix the line-height*/
+
+font()
+	font-size(base-font-size)
+	font-family base-font-family

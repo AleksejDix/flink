@@ -16,6 +16,7 @@
 ## lib/stylus/generic/mixins.styl
 
 -  [ ] **FIXME** `(line 17)`  extend this function with @extend in +block-mixin()
+-  [ ] **FIXME** `(line 62)`  fix the line-height*/
 
 ## lib/stylus/generic/normalize.styl
 
@@ -25,4 +26,4 @@
 
 * * *
 
-Last generated: Thu May 14 2015 16:58:07 by [grunt-todo](https://github.com/leny/grunt-todo).
+Last generated: Thu May 14 2015 20:09:39 by [grunt-todo](https://github.com/leny/grunt-todo).
