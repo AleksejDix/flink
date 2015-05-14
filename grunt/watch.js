@@ -1,4 +1,8 @@
 module.exports = {
+	todo:{
+		files: [ '<%= flink.input %>/**/*.*' ],
+		tasks: [ 'todo' ]
+	},
 	images: {
 		files: [ '<%= flink.input %>/<%= flink.img %>/*.{png,jpg,gif}' ],
 		tasks: [ 'imagemin' ]
@@ -9,7 +13,7 @@ module.exports = {
 	}, /* delete images */
 	stylus: {
 		files: [ '<%= flink.input %>/<%= flink.stylus %>/**/*.styl' ],
-		tasks: [ 'newer:stylus', 'postcss', 'autoprefixer', 'newer:todo' ]
+		tasks: [ 'newer:stylus', 'postcss', 'autoprefixer' ]
 	}, /* watch stylus lost-grid rupture autoprefixer :P whole css woodoo*/
 	jade: {
 		files: ['<%= flink.input %>/<%= flink.jade %>/*.jade' ],

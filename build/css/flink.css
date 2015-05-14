@@ -106,7 +106,6 @@ svg:not(:root) {
 figure {
   margin: 0;
 }
-/* todo i love it*/
 textarea {
   overflow: auto;
   vertical-align: top;
@@ -163,6 +162,5 @@ textarea:focus {
   cursor: text;
   outline: none;
 }
-/* TODO take a break */
 /*------------------------------------*    #HELPER
 \*------------------------------------*/

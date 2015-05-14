@@ -11,15 +11,20 @@ module.exports = {
 				  name: "FIXME",
 				  pattern: /FIXME/,
 				  color: "red"
+				},
+				{
+					name: "DONE",
+					pattern: /DONE/,
+					color: "green"
 				}
 			],
-			file: "report.md",
+			file: "readme/report.md",
 			githubBoxes: true,
 			colophon: true,
 			usePackage: true
 		},
 		src:[
-			'<%= flink.output %>/**/*'
+			'<%= flink.input %>/**/*'
 		],
 	},
 }
